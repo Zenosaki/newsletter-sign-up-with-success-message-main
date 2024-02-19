@@ -1,0 +1,223 @@
+
+*{
+  font-family:'Roboto', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body{
+  background-color: hsl(235, 18%, 26%);
+}
+
+
+
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 105px;
+  background-color:hsl(0, 0%, 100%) ;
+  padding: 22px 25px;
+  border-radius: 35px;
+}
+
+.js-hide{
+  display: none;
+}
+
+.js-main2{
+  display: block;
+}
+
+
+.mobile-background{
+  display: none;
+}
+
+.Left-Section{
+  display: flex;
+  flex-direction: column;
+  gap: 33px;
+  position: relative;
+  left: 40px;
+}
+
+
+.Left-Section .Submit{
+  cursor: pointer;
+  background-color:hsl(234, 29%, 20%) ;
+  color:hsl(0, 0%, 100%);
+  font-size:16px ;
+  font-weight: 550;
+  padding: 18px;
+  width: 375px;
+  border: 1px solid transparent;
+  border-radius: 9px;
+  transition: 0.3s;
+}
+
+.Left-Section p{
+  width: 360px;
+  color: hsl(234, 29%, 20%) ;
+  font-weight: 400;
+}
+
+.Left-Section p span{
+  position: relative;
+  top: 7px;
+}
+
+.Left-Section .Email-Box input{
+  outline: none;
+  padding:  17px 21px;
+  width: 375px;
+  border: 1px solid hsl(231, 7%, 60%);
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.Left-Section .Email-Box .email-first{
+  padding-bottom: 12px;
+  color:hsl(234, 29%, 20%) ;
+  font-weight: bolder;
+}
+
+.Left-Section .Email-Box .required{
+  padding-bottom: 12px;
+  font-weight: bolder;
+}
+
+
+
+.Left-Section .Email-Box .email-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Left-Section .Email-Box .email-header .js-is-valid{
+  display: none;
+} 
+
+.Left-Section h1{
+  font-size: 55px;
+  font-weight: 700;
+  color:hsl(234, 29%, 20%) ;
+}
+
+
+.Left-Section .Updates-Elements{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.Left-Section .Updates-Elements p{
+  display: inline-block;
+  align-items: center;
+}
+
+.Left-Section .Submit:hover{
+  background-image: linear-gradient(to right, hsl(340, 100%, 67%), hsl(4, 100%, 67%))
+}
+
+
+.email-valid{
+  background-color: hsl(0, 0%, 100%);
+  padding: 50px 65px;
+  width: 502px;
+  height: 510px;
+  margin-top: 120px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.email-valid h1{
+  font-size: 51px;
+  font-weight: bolder;
+  color:hsl(234, 29%, 20%) ;
+}
+
+.email-valid p span{
+  font-weight: bolder;
+  color:hsl(234, 29%, 20%) ;
+}
+
+.email-valid p {
+  color:hsl(234, 29%, 20%) ;
+}
+
+.email-valid button{
+  cursor: pointer;
+  background-color:hsl(234, 29%, 20%) ;
+  color:hsl(0, 0%, 100%);
+  font-size:16px ;
+  font-weight: 550;
+  padding: 18px;
+  width: 375px;
+  border: 1px solid transparent;
+  border-radius: 9px;
+}
+
+.email-valid button:hover{
+  background-image: linear-gradient(to right, hsl(340, 100%, 67%), hsl(4, 100%, 67%));
+}
+
+.js-not-valid  .required{
+  display: block;
+  color:rgba(252, 78, 55, 0.5);
+}
+
+.email-title{
+  display: none;
+}
+
+.js-not-valid .js-user-email {
+  background-color: rgba(235, 116, 100, 0.5);
+  border: 1px solid rgb(233, 121, 106);
+}
+
+.appearance{
+  display: none;
+}
+
+.Phone-Screen-Background{
+  display: none;
+}
+
+
+
+@media only screen and (max-width: 375px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 375px;
+    margin: 0 16px;
+  }
+  
+.Right-Section{
+  display: none;
+}
+
+.Phone-Screen-Background{
+  display: block;
+}
+
+  .Email-Box {
+    width: fit-content;
+  }
+}
